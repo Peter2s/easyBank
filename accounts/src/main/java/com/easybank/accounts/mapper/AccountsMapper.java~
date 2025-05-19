@@ -1,0 +1,4 @@
+package com.easybank.accounts.mapper;
+
+public class AccountsMapper {
+}

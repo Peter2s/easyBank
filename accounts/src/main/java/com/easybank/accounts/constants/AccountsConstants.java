@@ -1,4 +1,4 @@
-package constants;
+package com.easybank.accounts.constants;
 
 public class AccountsConstants {
 

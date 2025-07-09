@@ -37,8 +37,6 @@ public class AccountsServiceImpl implements IAccountsService {
             throw new CustomerAlreadyExistsException("Customer already registered with the same Mobile Number "
             + customerDto.getMobileNumber());
         }
-        customer.setCreatedBy("peter");
-        customer.setCreatedAt(LocalDate.from(LocalDateTime.now()));
         customersRepo.save(customer);
 
         accountsRepo.save(createNewAccount(customer));
